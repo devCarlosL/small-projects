@@ -22,7 +22,7 @@ const updatePlayIcon = () => {
   }
 };
 
-// Atualiza o progresso do vídeo e o tempo
+// Atualiza a barra de progresso do vídeo e o tempo
 const updateProgress = () => {
   progress.value = (video.currentTime / video.duration) * 100;
 
@@ -41,7 +41,7 @@ const updateProgress = () => {
   timestamp.innerHTML = `${minutes}:${seconds}`;
 };
 
-// Define o tempo do vídeo para progredir
+// Define o tempo do vídeo na barra  de progressão
 const setVideoProgress = () => {
   video.currentTime = Number(progress.value * video.duration) / 100;
 };
